@@ -2,7 +2,7 @@
 /* global driver */
 
 let assert = require('assert'),
-    webdriver = require('selenium-webdriver'),
+    //webdriver = require('selenium-webdriver'),
     makeSuite = require('../util/helpers').makeSuite;
 
 makeSuite('Test Emmisary Landing', function() {
@@ -11,7 +11,7 @@ makeSuite('Test Emmisary Landing', function() {
         driver.get('https://kiss-my-app.appspot.com/');
 
         driver.getTitle().then(function(title) {
-            assert.equal(title,'Emissary');
+            assert.equal(title,'Secretariat');
             done();
         });
     });
